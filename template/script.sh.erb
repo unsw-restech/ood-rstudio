@@ -2,10 +2,10 @@
 module purge
 
 # load RStudio Server
-module load <%= context.Rserver %>
+module load ood-rs-server/1.3.959
 
 # load R
-module load <%= context.Rapp %>
+module load <%= context.version %>
 
 #
 # Start RStudio Server
