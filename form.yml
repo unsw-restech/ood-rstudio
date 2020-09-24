@@ -11,8 +11,7 @@ attributes:
     label: "Number of cores"
     value: 4
     help: |
-      Number of cores on node type (4 GB per core unless requesting whole
-      node).
+      Number of cores, 4GB per core
     min: 0
     max: 28
     step: 1
