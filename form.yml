@@ -4,8 +4,17 @@ form:
   - version
   - bc_num_hours
   - num_cores
+  - memory
   - bc_email_on_started
 attributes:
+  memory:
+    widget: "number_field"
+    max: 1000
+    min: 4
+    step: 1
+    label: "Memory (GB)"
+    help: |
+      Memory requests will affect your wait time. The points at which this happens are 124, 180, 248, 370, 750 and 1000.
   bc_num_hours:
     help: |
       <a href="https://unsw-restech.github.io/using_katana/running_jobs.html#tips-for-using-pbs-and-katana-effectively">Tips for using Katana effectively</a>

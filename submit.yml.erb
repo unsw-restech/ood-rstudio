@@ -1,6 +1,6 @@
 <%-
   ncpus = num_cores.blank? ? 2 : num_cores.to_i
-  mem = ncpus * 4
+  mem = memory
 -%>
 ---
 batch_connect:
