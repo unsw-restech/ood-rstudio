@@ -36,8 +36,10 @@ attributes:
   version:
     widget: select
     label: "R version"
-    help: "This defines the version of R you want to load."
+    help: >-
+      Which version of R or Bioconductor you want to use.
     options:
+      - [ "4.0.2-clean", "R/4.0.2-clean" ]
       - [ "4.0.2", "R/4.0.2" ]
       - [ "3.6.3", "R/3.6.3" ]
       - [ "3.5.3", "R/3.5.3" ]
@@ -45,3 +47,7 @@ attributes:
       - [ "4.0.2-gcc7", "gcc/7.5.0 R/4.0.2-gcc7" ]
       - [ "3.6.3-gcc7", "gcc/7.5.0 R/3.6.3-gcc7" ]
       - [ "3.5.3-gcc7", "gcc/7.5.0 R/3.5.3-gcc7" ]
+      - [ "Bioconductor 3.11", "bioconductor/3.11"]
+      - [ "Bioconductor 3.11-gcc7", "gcc/7.5.0 bioconductor/3.11-gcc7"]
+      - [ "Bioconductor 3.10", "bioconductor/3.10"]
+      - [ "Bioconductor 3.8", "bioconductor/3.8"]
