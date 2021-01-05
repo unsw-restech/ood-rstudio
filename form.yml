@@ -47,6 +47,8 @@ attributes:
       - [ "3.5.3",                  "R/3.5.3" ]
       - [ "3.5.3-gcc7",             "gcc/7.5.0 R/3.5.3-gcc7" ]
       - [ "3.4.4",                  "R/3.4.4" ]
+      - [ "Bioconductor 3.12",      "bioconductor/3.12"]
+      - [ "Bioconductor 3.12-gcc7", "gcc/7.5.0 bioconductor/3.12-gcc7"]
       - [ "Bioconductor 3.11",      "bioconductor/3.11"]
       - [ "Bioconductor 3.11-gcc7", "gcc/7.5.0 bioconductor/3.11-gcc7"]
       - [ "Bioconductor 3.10",      "bioconductor/3.10"]
