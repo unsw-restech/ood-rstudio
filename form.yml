@@ -7,27 +7,32 @@ form:
   - memory
   - bc_email_on_started
 attributes:
-  memory:
-    widget: "number_field"
-    max: 1000
-    min: 4
-    step: 1
-    label: "Memory (GB)"
-    help: |
-      Memory requests will affect your wait time. The points at which this happens are 124, 180, 248, 370, 750 and 1000.
   bc_num_hours:
     help: >-
       <a href="https://unsw-restech.github.io/using_katana/running_jobs.html#tips-for-using-pbs-and-katana-effectively">Tips for using Katana effectively</a>
   num_cores:
-    widget: "number_field"
+    id: num_cores
+    widget: number_field
     label: "Number of cores"
-    value: 4
-    help: |
-      Number of cores, 4GB per core
+    value: 1
     min: 0
-    max: 28
+    max: 48
     step: 1
-    id: 'num_cores'
+    help: >-
+      How many processor cores you need.  Unless you run something like
+      "doMC" or "doParallel" in your code, R will only ever use 1
+      processor core.  Leave this set to 1 if unsure.
+  memory:
+    widget: number_field
+    label: "Memory (GB)"
+    value: 4
+    min: 4
+    max: 1000
+    step: 1
+    help: >-
+      How much memory you need.  If the amount of memory you request goes
+      over certain thresholds, it will affect your wait time.  The points
+      at which this happens are 124, 180, 248, 370, 750 and 1000 GB.
   version:
     widget: select
     label: "R version"
